@@ -1,0 +1,6 @@
+{
+  "name": "Zhi Zheng Wellness",
+  "description": "Zhi Zheng Wellness coaching platform. Discover Inner Care, book coaching sessions, sign up for monthly reflections, explore the digital sanctuary, and start your mindfulness journey.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

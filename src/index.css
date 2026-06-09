@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-outline-variant: #c4c8be;
+  --color-primary-container: #687962;
+  --color-on-secondary-fixed: #1c1c18;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-tertiary-fixed-variant: #71361c;
+  --color-on-tertiary-fixed: #370e00;
+  --color-on-secondary-fixed-variant: #474743;
+  --color-on-secondary: #ffffff;
+  --color-surface-container-highest: #e2e3e1;
+  --color-primary-fixed: #d5e8cb;
+  --color-on-primary-fixed: #101f0d;
+  --color-secondary-fixed: #e5e2dc;
+  --color-on-error: #ffffff;
+  --color-surface-container-high: #e8e8e6;
+  --color-surface-variant: #e2e3e1;
+  --color-inverse-on-surface: #f1f1ef;
+  --color-tertiary: #8c4a2f;
+  --color-surface-dim: #dadad8;
+  --color-surface-bright: #f9f9f7;
+  --color-error: #ba1a1a;
+  --color-secondary-container: #e5e2dc;
+  --color-secondary: #5f5e5a;
+  --color-on-primary-fixed-variant: #3b4b36;
+  --color-surface: #f9f9f7;
+  --color-on-surface-variant: #444841;
+  --color-inverse-surface: #2f3130;
+  --color-tertiary-fixed-dim: #ffb599;
+  --color-inverse-primary: #b9ccb0;
+  --color-outline: #747870;
+  --color-error-container: #ffdad6;
+  --color-primary-fixed-dim: #b9ccb0;
+  --color-tertiary-fixed: #ffdbce;
+  --color-on-secondary-container: #656460;
+  --color-surface-tint: #52634c;
+  --color-secondary-fixed-dim: #c9c6c1;
+  --color-on-primary-container: #f8fff0;
+  --color-on-tertiary-container: #fffbff;
+  --color-background: #f9f9f7;
+  --color-primary: #50614a;
+  --color-surface-container-low: #f3f4f2;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #a96245;
+  --color-on-background: #1a1c1b;
+  --color-on-primary: #ffffff;
+  --color-on-surface: #1a1c1b;
+  --color-on-error-container: #93000a;
+  --color-surface-container: #eeeeec;
+}
+
+@layer utilities {
+  .soft-shadow {
+    box-shadow: 0 10px 40px -10px rgba(80, 97, 74, 0.15);
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* Custom styles for ebook page turn and scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container-low);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
